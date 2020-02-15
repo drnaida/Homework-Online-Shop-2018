@@ -1,0 +1,121 @@
+.titleMandex{
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+.titleMandex::first-letter {
+  color: red;
+}
+.titleImg {
+  text-align: center;
+}
+.titleGoods {
+  text-align: left;
+  font-size: 30px;
+  margin: 20px;
+}
+hr {
+  border: none;
+  background-color: orange;
+  height: 2px;
+}
+.boxCatImg {
+  width: 300px;
+}
+.boxCat {
+  margin: 20px;
+  font-size: 25px;
+}
+.priceNow {
+  color: red;
+  font-weight: bold;
+  font-size: 90%;
+  display: inline-block;
+}
+.priceBefore {
+  font-size: 70%;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.allPrice {
+  font-size: 25px;
+  display: inline-block;
+}
+.classCat {
+  font-size: 50%;
+  margin: 0;
+  padding: 5px;
+}
+.nameCat {
+  margin: 0;
+  width: 250px;
+  white-space: nowrap; /* Отменяем перенос текста */
+  overflow: hidden; /* Обрезаем содержимое */
+  padding: 5px; /* Поля */
+  text-overflow: ellipsis; /* Многоточие */
+}
+.nameCat:hover {
+   background: #f0f0f0; /* Цвет фона */
+   white-space: normal; /* Обычный перенос текста */
+   width: 300px;
+}
+.describeOfCat {
+  font-size: 14px;
+}
+a:hover {
+  color: red;
+  opacity: 0.7;
+}
+.footereMandex {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: bold;
+}
+.footereMandex::first-letter {
+  color: red;
+}
+#block:checked ~ article {
+  width: 300px;
+  float: bottom;
+  display: inline-block;
+  margin: 20px;
+}
+#list:checked ~ article {
+  width: auto;
+  float: bottom;
+  display: block;
+  margin: 20px;
+}
+.kindnessOfCats {
+  overflow: hidden;
+  display: inline-block;
+}
+.rating {
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+.star:hover,
+.star:hover ~ .star {
+  background-position: 0 0;
+}
+.kindnessOfCats:hover .star:hover,
+.kindnessOfCats:hover .star:hover ~ .star,
+.rating:checked ~ .star {
+  background-position: 0 0;
+}
+.star,
+.kindnessOfCats:hover .star {
+  float: right;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(starForRating.png) 0 -16px;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
